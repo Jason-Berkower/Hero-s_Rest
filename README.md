@@ -1,8 +1,6 @@
-# The FOB
+# Hero's Rest
 
 ## Overview
-
-FOB is a military acronym, which means Forward Operating Base. This application is going to be geared towards a community that enjoys the military simulator series designed by Bohemia Interactive: Arma 3. Users will be able to create an account, create "Units" (gaming groups), and schedule events.
 
 <br>
 
@@ -111,8 +109,6 @@ FOB is a military acronym, which means Forward Operating Base. This application 
 
 #### Component Architecture
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like.
-
 ```structure
 
 src
@@ -122,8 +118,34 @@ src
       |__ images
       |__ mockups
 |__ components/
-      |__ Header.jsx
+      |__ Navigation
+          |__ Navbar.jsx
+          |__ Navbar.css
+      |__ SignUp/In
+          |__ SignUp.jsx
+          |__ SignIn.jsx
+          |__ Sign.css
+      |__ Forms
+          |__ Character
+              |__ CreateCharacter.jsx
+              |__ CreateCharacter.css
+          |__ CampaignNotes
+              |__ CreateCampaignNote.jsx
+              |__ CampaignNote.css
+          |__ Posts
+              |__ CreatePost.jsx
+              |__ CreatePost.css
+          |__ Comments
+              |__ CreateComment.jsx
+              |__ Comment.css
+      |__ Footer
+          |__ Footer.jsx
+          |__ Footer.css
 |__ services/
+      |__ apiConfig.js
+      |__ user.js
+      |__ character.js
+      |__ posts.js
 
 ```
 
@@ -154,14 +176,15 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+- Authentication
+- Messaging functionality
 
 ---
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+> This will be filled out when appropriate.
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
+> This will be filled out when appropriate.
