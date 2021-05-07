@@ -65,13 +65,13 @@ All heroes require a place to relax after each campaign. With this application, 
 
 ### Libraries and Dependencies
 
-|   Library    | Description                                            |
-| :----------: | :----------------------------------------------------- |
-|    React     | _Render the front end of the application._             |
-| React Router | _Provide local routing/linking._                       |
-|    Axios     | _Provide communication between backend and front end._ |
-|    Devise    | _Authentication (Post-MVP)_                            |
-|    Rails     | _Provide backend architecture/functionality._          |
+|     Library      | Description                                            |
+| :--------------: | :----------------------------------------------------- |
+|      React       | _Render the front end of the application._             |
+| React Router DOM | _Provide local routing/linking._                       |
+|      Axios       | _Provide communication between backend and front end._ |
+|      Devise      | _Authentication (Post-MVP)_                            |
+|      Rails       | _Provide backend architecture/functionality._          |
 
 <br>
 
@@ -79,31 +79,17 @@ All heroes require a place to relax after each campaign. With this application, 
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
+- Desktop
 
-![Dummy Link](url)
+![Hero's Rest Desktop Wireframes](https://i.imgur.com/MtXj3lq.png)
 
-- Desktop Landing
+- Tablet
 
-![Dummy Link](url)
+![Hero's Rest Tablet Wireframes](url)
 
-- Desktop Hero
+- Mobile
 
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
+![Hero's Rest Mobile Wireframes](url)
 
 #### Component Tree
 
