@@ -2,6 +2,8 @@
 
 ## Overview
 
+All heroes require a place to relax after each campaign. With this application, users will be able to take their RPG characters and give them a place to exist outside of their game. Using their characters, users can post notes related to their campaign and make posts sharing their characters thoughts and feelings. The purpose is not only to give players a place to keep records of the goings-on in their games, but to foster a creative experience where users can inhabit their characters on a social media platform.
+
 <br>
 
 ## MVP
