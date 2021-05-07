@@ -153,23 +153,24 @@ src
 
 #### Time Estimates
 
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+| Task                               | Priority | Estimated Time | Time Invested | Actual Time |
+| ---------------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Setup Back End Skeleton            |    H     |     1 hrs      |       -       |      -      |
+| Create Back End Models/Seeds       |    H     |     1 hrs      |       -       |      -      |
+| Create Back End Controllers/Routes |    H     |     3 hrs      |       -       |      -      |
+| Setup Front End Skeleton           |    H     |     1 hrs      |       -       |      -      |
+| Create Navbar/Footer               |    M     |     1 hrs      |       -       |      -      |
+| Setup Back End -> Front End Comms  |    H     |     3 hrs      |       -       |      -      |
+| Add SignUp/In Form                 |    M     |     2 hrs      |       -       |      -      |
+| Add Character Form                 |    M     |     3 hrs      |       -       |      -      |
+| Add Post Form                      |    M     |     3 hrs      |       -       |      -      |
+| Add Comment Form                   |    M     |     2 hrs      |       -       |      -      |
+| P-MVP Like System                  |    L     |     3 hrs      |       -       |      -      |
+| P-MVP Authentication               |    L     |     3 hrs      |       -       |      -      |
+| P-MVP Friend System                |    L     |     3 hrs      |       -       |      -      |
+| P-MVP Messaging Functionality      |    L     |     5 hrs      |       -       |      -      |
+| Polish                             |    L     |     3 hrs      |       -       |      -      |
+| TOTAL                              |          |     43 hrs     |       -       |      -      |
 
 <br>
 
@@ -185,7 +186,9 @@ src
 ## Post-MVP
 
 - Authentication
+- Add Like System
 - Messaging functionality
+- Friending System
 
 ---
 
