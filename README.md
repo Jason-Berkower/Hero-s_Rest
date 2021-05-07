@@ -85,7 +85,7 @@ All heroes require a place to relax after each campaign. With this application, 
 
 - Tablet
 
-![Hero's Rest Tablet Wireframes](url)
+![Hero's Rest Tablet Wireframes](https://i.imgur.com/UCqYRGk.png)
 
 - Mobile
 
