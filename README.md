@@ -176,6 +176,7 @@ src
 - Add Like System
 - Messaging functionality
 - Friending System
+- Campaign Notes
 
 ---
 
