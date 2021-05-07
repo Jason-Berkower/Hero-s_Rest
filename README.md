@@ -63,6 +63,18 @@ All heroes require a place to relax after each campaign. With this application, 
 
 <br>
 
+### Libraries and Dependencies
+
+|   Library    | Description                                            |
+| :----------: | :----------------------------------------------------- |
+|    React     | _Render the front end of the application._             |
+| React Router | _Provide local routing/linking._                       |
+|    Axios     | _Provide communication between backend and front end._ |
+|    Devise    | _Authentication (Post-MVP)_                            |
+|    Rails     | _Provide backend architecture/functionality._          |
+
+<br>
+
 ### Client (Front End)
 
 #### Wireframes
@@ -95,9 +107,7 @@ All heroes require a place to relax after each campaign. With this application, 
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
-
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
+![Hero's Rest Component Tree](https://i.imgur.com/nCzyRkX.jpg)
 
 #### Component Architecture
 
@@ -110,27 +120,27 @@ src
       |__ images
       |__ mockups
 |__ components/
-      |__ Navigation
+      |__ Navigation/
           |__ Navbar.jsx
           |__ Navbar.css
-      |__ SignUp/In
+      |__ SignUp/In/
           |__ SignUp.jsx
           |__ SignIn.jsx
           |__ Sign.css
-      |__ Forms
-          |__ Character
+      |__ Forms/
+          |__ Character/
               |__ CreateCharacter.jsx
               |__ CreateCharacter.css
-          |__ CampaignNotes
+          |__ CampaignNotes/
               |__ CreateCampaignNote.jsx
               |__ CampaignNote.css
-          |__ Posts
+          |__ Posts/
               |__ CreatePost.jsx
               |__ CreatePost.css
-          |__ Comments
+          |__ Comments/
               |__ CreateComment.jsx
               |__ Comment.css
-      |__ Footer
+      |__ Footer/
           |__ Footer.jsx
           |__ Footer.css
 |__ services/
@@ -147,6 +157,16 @@ src
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
 | Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
+| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
+| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
+| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
+| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
+| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
 
 > _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
@@ -157,7 +177,7 @@ src
 
 #### ERD Model
 
-![Hero's Rest ERD](https://i.imgur.com/0tLFbhT.png)
+![Hero's Rest ERD](https://i.imgur.com/0h1lzPC.png)
 <br>
 
 ---
