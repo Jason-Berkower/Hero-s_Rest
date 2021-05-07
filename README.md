@@ -151,12 +151,13 @@ src
 | Add Character Form                 |    M     |     3 hrs      |       -       |      -      |
 | Add Post Form                      |    M     |     3 hrs      |       -       |      -      |
 | Add Comment Form                   |    M     |     2 hrs      |       -       |      -      |
+| Styling                            |    M     |     4 hrs      |       -       |      -      |
 | P-MVP Like System                  |    L     |     3 hrs      |       -       |      -      |
 | P-MVP Authentication               |    L     |     4 hrs      |       -       |      -      |
 | P-MVP Friend System                |    L     |     3 hrs      |       -       |      -      |
 | P-MVP Messaging Functionality      |    L     |     5 hrs      |       -       |      -      |
 | Polish                             |    L     |     3 hrs      |       -       |      -      |
-| TOTAL                              |          |     44 hrs     |       -       |      -      |
+| TOTAL                              |          |     48 hrs     |       -       |      -      |
 
 <br>
 
