@@ -9,19 +9,19 @@
 #User List
 User.destroy_all
 
-User.create!()
+User.create!(name: , email: , password_digest: )
 
 #Character List
 Character.destroy_all
 
-Character.create!()
+Character.create!(name: , race: , class: , img_url: )
 
 #Post List
 Post.destroy_all
 
-Post.create!()
+Post.create!(title: , content: , character_id:)
 
 #Comment List
 Comment.destroy_all
 
-Comment.create!()
+Comment.create!(content: , character_id: , post_id:)
