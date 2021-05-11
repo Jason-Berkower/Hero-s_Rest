@@ -5,6 +5,7 @@ class CreateCharacters < ActiveRecord::Migration[6.1]
       t.string :race
       t.string :class
       t.string :img_url
+      t.references :user, null: false, foreign_key: true
 
       t.timestamps
     end

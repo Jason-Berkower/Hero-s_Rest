@@ -5,23 +5,3 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-#User List
-User.destroy_all
-
-User.create!(name: , email: , password_digest: )
-
-#Character List
-Character.destroy_all
-
-Character.create!(name: , race: , class: , img_url: )
-
-#Post List
-Post.destroy_all
-
-Post.create!(title: , content: , character_id:)
-
-#Comment List
-Comment.destroy_all
-
-Comment.create!(content: , character_id: , post_id:)
