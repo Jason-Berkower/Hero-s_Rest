@@ -25,7 +25,15 @@ function App() {
   return (
     <div className="App">
       <Navbar currentUser={currentUser} />
-      <Switch></Switch>
+      <Switch>
+        <Route path="/signup">
+          <SignUp />
+        </Route>
+        <Route path="/signin">
+          <SignIn />
+        </Route>
+      </Switch>
+      <Footer />
     </div>
   );
 }
