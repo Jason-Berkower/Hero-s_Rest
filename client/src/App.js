@@ -32,6 +32,8 @@ function App() {
         <Route path="/signin">
           <SignIn />
         </Route>
+        <Route path=""></Route>
+        <Route path=""></Route>
       </Switch>
       <Footer />
     </div>
