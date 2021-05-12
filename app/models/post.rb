@@ -1,4 +1,4 @@
 class Post < ApplicationRecord
-  belongs_to :character, dependent :delete_all
+  belongs_to :character
   belongs_to :user
 end
