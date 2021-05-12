@@ -37,6 +37,21 @@ export const createUser = async (formData) => {
   const res = await api.post("/characters", { user: formData });
   return res.data;
 };
+
 // FOR POSTS
+export const getAllPosts = async () => {
+  const res = await api.get(`/posts`);
+  return res.data;
+};
+
+export const getOnePost = async (id) => {
+  const res = await api.get(`/posts/${id}`);
+  return res.data;
+};
+
+export const createPost = async (formData) => {
+  const res = await api.post("/post", { post: formData });
+  return res.data;
+};
 
 // FOR COMMENTS
