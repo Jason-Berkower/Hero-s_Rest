@@ -6,3 +6,11 @@ Rails.application.routes.draw do
     end
   end
 end
+
+# Route for Users
+
+# Route for Characters
+
+# Route for Posts
+
+# Route for Comments
