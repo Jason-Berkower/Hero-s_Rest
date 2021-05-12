@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+# Route for Characters
+get '/users/characters/', to: 'characters#index', as: 'characters'
+# Route for Posts
+get '/users/characters/posts/', to: 'posts#index', as: 'posts'
+# Route for Comments
+get 'users/characters/comments/', to: 'comments#index', as: 'comments'
+
   resources :users do
     resources :characters do
       resources :posts
@@ -7,11 +14,4 @@ Rails.application.routes.draw do
   end
 end
 
-# Route for Users
-get "/users", to: "users#all_users"
-# Route for Characters
-get "/characters", to: "characters#all_characters"
-# Route for Posts
-get "/posts", to: "posts#all_posts"
-# Route for Comments
-get "/comments", to: "comments#all_comments"
+
