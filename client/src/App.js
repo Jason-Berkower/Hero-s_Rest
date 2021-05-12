@@ -5,10 +5,29 @@ import { Footer } from "./components/Footer/Footer";
 import { CreateCharacter } from "./components/Forms/Character/CreateCharacter";
 import { CreatePost } from "./components/Forms/Posts/CreatePost";
 import { CreateComment } from "./components/Forms/Comments/CreateComment";
+
+import { Route, Switch } from "react-router-dom";
+import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
-  return <div className="App"></div>;
+  const [currentUser, setCurrentUser] = useState(null);
+
+  useEffect(() => {
+    verify();
+  }, []);
+
+  const verify = async () => {
+    let user = await verifyUser();
+    setCurrentUser(user);
+  };
+
+  return (
+    <div className="App">
+      <Navbar currentUser={currentUser} />
+      <Switch></Switch>
+    </div>
+  );
 }
 
 export default App;
