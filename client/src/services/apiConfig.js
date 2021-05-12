@@ -1,6 +1,20 @@
 import axios from "axios";
 
-const baseUrl = "https://localhost:3000";
+// const production = "https://heroesrest-api.herokuapp.com/";
+// const baseUrl = "https://localhost:3000";
+let apiUrl;
+
+const apiUrls = {
+  development: "https://localhost:3000",
+  production: "https://heroesrest-api.herokuapp.com/",
+};
+
+// Conditional logic to set between localhost and production
+if (window.location.hostname === "localhost") {
+  apiUrl = apiUrls.development;
+} else {
+  apiUrl = apiUrls.production;
+}
 
 const api = axios.create({
   baseURL: baseUrl,
