@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   def index
-    @character: Character.find(params[:character_id])
-    @posts: Post.where(character_id: @character.id)
+    @character = Character.find(params[:character_id])
+    @posts = Post.where(character_id: @character.id)
     render json: @posts, include: :character, status: :ok
   end
 

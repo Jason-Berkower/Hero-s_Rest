@@ -1,8 +1,8 @@
 class CommentsController < ApplicationController
   before_action :set_comment, only: [:show, :create, :destroy]
   def index
-    @character: Character.find(params[:character_id])
-    @comments: Comments.where(character_id: @character.id)
+    @character = Character.find(params[:character_id])
+    @comments = Comments.where(character_id: @character.id)
     render json: @comments, include: :character, status: :ok
   end
 
