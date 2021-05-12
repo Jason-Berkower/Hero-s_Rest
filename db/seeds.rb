@@ -12,7 +12,9 @@ Post.destroy_all
 Comment.destroy_all
 
 # USER LIST
-
+@table_master = User.create!(username: 'Table_Master', email: 'thetablenator@mastery.com', password_digest: 'tabletabletabletabletable')
+@serious36 = User.create!(username: 'Serious36', email: 'seriouslyguys@36ers.co.uk', password_diget: 's56g7[p_iaGhD2?sO=')
+@bigbys_fan29 = User.create!(username: 'Bigbys_fan29', email: 'floatinghands@bigbyhome.deu', password_digest: 'BiGbYsMiGhTyHaNd2')
 puts "#{User.count} users created!"
 # CHARACTER LIST
 
