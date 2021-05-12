@@ -1,4 +1,4 @@
-import React from 'react'
+import './CreateCharacter.css';
 
 export default function CreateCharacter() {
   return (
