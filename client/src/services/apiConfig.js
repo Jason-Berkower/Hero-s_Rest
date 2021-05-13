@@ -42,12 +42,12 @@ export const getAllCharacters = async () => {
   return res.data;
 };
 
-export const getOneUser = async (id) => {
+export const getOneCharacter = async (id) => {
   const res = await api.get(`/characters/${id}`);
   return res.data;
 };
 
-export const createUser = async (formData) => {
+export const createCharacter = async (formData) => {
   const res = await api.post("/characters", { character: formData });
   return res.data;
 };
