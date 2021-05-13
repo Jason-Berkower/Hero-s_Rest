@@ -5,6 +5,20 @@ import './CreateCharacter.css';
 export default function CreateCharacter() {
   const [input, setInput] = useState({});
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setInput((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const res = await createCharacter(input);
+    return res;
+  }
+
   return (
     <div>
       <h2>Create Your Character</h2>
