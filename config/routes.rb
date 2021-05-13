@@ -21,7 +21,11 @@ put "/users/:id/characters/:id/posts/:id", to: 'posts#update'
 delete "/users/:id/characters/:id/posts/:id", to: 'posts#delete'
 
 # Routes for Comments
-get "/users/characters/comments/", to: 'comments#index', as: 'comments'
+get "/users/characters/posts/comments/", to: 'comments#index', as: 'comments'
+get "/users/:id/characters/:id/posts/:id/comments/:id", to: 'comments#show'
+put "/users/characters/posts/comments/", to: 'comments#create'
+put "/users/:id/characters/:id/posts/:id/comments/:id", to: 'comments#update'
+delete "/users/:id/characters/:id/posts/:id/comments/:id", to: 'comments#delete'
 
   resources :users do
     resources :characters do
