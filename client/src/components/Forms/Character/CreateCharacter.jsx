@@ -8,9 +8,16 @@ export default function CreateCharacter() {
   return (
     <div>
       <h2>Create Your Character</h2>
-      <form id="character-container">
+      <form id="character-container" onChange={handleChange} onSubmit={handleSubmit}>
         <label>Name:</label>
-        <input type="text" value="name" />
+        <input name="name" type="text" value={input.name} />
+        <label>Race:</label>
+        <input name="race" type="text" value={input.race} />
+        <label>Class:</label>
+        <input name="class" type="text" value={input.class} />
+        <label>Image URL:</label>
+        <input name="img_url" type="text" value={input.img_url} />
+        <button type="submit" />
       </form>
     </div>
   )
