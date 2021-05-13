@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 # Routes for Users
-
+get "/users/", to: 'users#index', as: 'users'
+get "/users/:id", to: 'users#show'
+post "/users/", to: 'users#create'
+put "/users/:id", to: 'users#update'
+delete "/users/:id", to: 'users#destroy'
 
 # Routes for Characters
 get "/users/characters/", to: 'characters#index', as: 'characters'
