@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  before_action :set_comment, only: [:show, :create, :destroy]
+  before_action :set_comment, only: [:index, :show, :create, :destroy]
   def index
     @character = Character.find(params[:character_id])
     @comments = Comments.where(character_id: @character.id)

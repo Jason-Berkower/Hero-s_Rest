@@ -32,8 +32,15 @@ function App() {
         <Route path="/signin">
           <SignIn />
         </Route>
-        <Route path=""></Route>
-        <Route path=""></Route>
+        <Route path="">
+          <CreateCharacter />
+        </Route>
+        <Route path="">
+          <CreatePost />
+        </Route>
+        <Route path="">
+          <CreateComment />
+        </Route>
       </Switch>
       <Footer />
     </div>
