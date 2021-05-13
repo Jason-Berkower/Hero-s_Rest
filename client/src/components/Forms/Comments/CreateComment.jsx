@@ -21,7 +21,12 @@ export default function CreateComment() {
 
   return (
     <div>
-
+      <h3>Comment:</h3>
+      <form id="comment-container" onChange={handleChange} onSubmit={handleSubmit}>
+        <label>Content:</label>
+        <input name="content" type="textarea" value={input.content} />
+        <button type="submit" />
+      </form>
     </div>
   )
 }
