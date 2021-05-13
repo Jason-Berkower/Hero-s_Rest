@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_13_025152) do
+ActiveRecord::Schema.define(version: 2021_05_13_033930) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2021_05_13_025152) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "posts_id"
+    t.bigint "comment_id"
     t.index ["character_id"], name: "index_comments_on_character_id"
     t.index ["posts_id"], name: "index_comments_on_posts_id"
     t.index ["user_id"], name: "index_comments_on_user_id"
@@ -45,7 +46,9 @@ ActiveRecord::Schema.define(version: 2021_05_13_025152) do
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.bigint "comments_id"
     t.index ["character_id"], name: "index_posts_on_character_id"
+    t.index ["comments_id"], name: "index_posts_on_comments_id"
     t.index ["user_id"], name: "index_posts_on_user_id"
   end
 
@@ -62,5 +65,6 @@ ActiveRecord::Schema.define(version: 2021_05_13_025152) do
   add_foreign_key "comments", "posts", column: "posts_id"
   add_foreign_key "comments", "users"
   add_foreign_key "posts", "characters"
+  add_foreign_key "posts", "comments", column: "comments_id"
   add_foreign_key "posts", "users"
 end

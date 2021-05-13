@@ -21,9 +21,9 @@ put "/users/:id/characters/:id/posts/:id", to: 'posts#update'
 delete "/users/:id/characters/:id/posts/:id", to: 'posts#delete'
 
 # Routes for Comments
-get "/users/characters/posts/comments/", to: 'comments#index', as: 'comments'
+get "/users/:id/characters/:id/posts/:id/comments/", to: 'comments#index', as: 'comments'
 get "/users/:id/characters/:id/posts/:id/comments/:id", to: 'comments#show'
-post "/users/characters/posts/comments/", to: 'comments#create'
+post "/users/:id/characters/:id/posts/:id/comments/", to: 'comments#create'
 put "/users/:id/characters/:id/posts/:id/comments/:id", to: 'comments#update'
 delete "/users/:id/characters/:id/posts/:id/comments/:id", to: 'comments#delete'
 
