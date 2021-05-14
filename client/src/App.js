@@ -13,14 +13,14 @@ import "./App.css";
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
 
-  useEffect(() => {
-    verify();
-  }, []);
+  // useEffect(() => {
+  //   verify();
+  // }, []);
 
-  const verify = async () => {
-    let user = await verifyUser();
-    setCurrentUser(user);
-  };
+  // const verify = async () => {
+  //   let user = await verifyUser();
+  //   setCurrentUser(user);
+  // };
 
   return (
     <div className="App">

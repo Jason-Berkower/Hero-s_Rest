@@ -48,7 +48,7 @@ export const getOneCharacter = async (id) => {
 };
 
 export const createCharacter = async (formData) => {
-  const res = await api.post("/characters", { character: formData });
+  const res = await api.post("/characters", formData);
   return res.data;
 };
 

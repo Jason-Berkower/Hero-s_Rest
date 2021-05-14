@@ -31,7 +31,7 @@ export default function CreateCharacter() {
         <input name="class" type="text" value={input.class} />
         <label>Image URL:</label>
         <input name="img_url" type="text" value={input.img_url} />
-        <button type="submit" />
+        <button type="submit">Submit</button>
       </form>
     </div>
   )
