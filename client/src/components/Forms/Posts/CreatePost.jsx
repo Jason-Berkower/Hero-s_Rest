@@ -22,7 +22,7 @@ export default function CreatePost() {
   return (
     <div>
       <h2>Create a Post!</h2>
-      <form id="post-container" onChange={handleChage} onSubmit={handleSubmit}>
+      <form id="post-container" onChange={handleChange} onSubmit={handleSubmit}>
         <label>Title:</label>
         <input name="title" type="text" value={input.title} />
         <label>Content:</label>
