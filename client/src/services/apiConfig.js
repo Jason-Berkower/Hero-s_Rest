@@ -38,33 +38,35 @@ export const createUser = async (formData) => {
 
 // FOR CHARACTERS
 export const getAllCharacters = async () => {
-  const res = await api.get(`/characters`);
+  const res = await api.get(`/users/characters`);
   return res.data;
 };
 
 export const getOneCharacter = async (id) => {
-  const res = await api.get(`/characters/${id}`);
+  const res = await api.get(`/users/${id}/characters/${id}`);
   return res.data;
 };
 
-export const createCharacter = async (formData) => {
-  const res = await api.post("/characters", formData);
+export const createCharacter = async (id, formData) => {
+  const res = await api.post(`/users/${id}/characters`, formData);
   return res.data;
 };
 
 // FOR POSTS
 export const getAllPosts = async () => {
-  const res = await api.get(`/posts`);
+  const res = await api.get(`users/characters/posts`);
   return res.data;
 };
 
 export const getOnePost = async (id) => {
-  const res = await api.get(`/posts/${id}`);
+  const res = await api.get(`/user/${id}/characters/${id}/posts/${id}`);
   return res.data;
 };
 
-export const createPost = async (formData) => {
-  const res = await api.post("/posts", { post: formData });
+export const createPost = async (id, formData) => {
+  const res = await api.post(`/users/${id}/characters/${id}/posts`, {
+    post: formData,
+  });
   return res.data;
 };
 
