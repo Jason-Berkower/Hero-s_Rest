@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { createPost } from '../../../services/apiConfig';
 import './CreatePost.css';
 
-export default function CreatePost() {
+export default function CreatePost(props) {
   const [input, setInput] = useState({});
 
   const handleChange = (e) => {
@@ -27,7 +27,7 @@ export default function CreatePost() {
         <input name="title" type="text" value={input.title} />
         <label>Content:</label>
         <input name="content" type="textarea" value={input.content} />
-        <button type="submit" />
+        <button type="submit">Submit</button>
       </form>
     </div>
   )

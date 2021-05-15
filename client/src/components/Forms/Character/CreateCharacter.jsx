@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { createCharacter } from '../../../services/apiConfig';
 import './CreateCharacter.css';
 
-export default function CreateCharacter() {
+export default function CreateCharacter(props) {
   const [input, setInput] = useState({});
 
   const handleChange = (e) => {

@@ -7,7 +7,7 @@ import CreatePost from "./components/Forms/Posts/CreatePost";
 import CreateComment from "./components/Forms/Comments/CreateComment";
 
 import { Route, Switch } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./App.css";
 
 function App() {
@@ -26,13 +26,13 @@ function App() {
     <div className="App">
       <Navbar currentUser={currentUser} />
       <Switch>
-        <Route path="/signup">
+        <Route exact path="/signup">
           <SignUp />
         </Route>
-        <Route path="/signin">
+        <Route exact path="/signin">
           <SignIn />
         </Route>
-        <Route path="/character-creation">
+        <Route exact path="/character-creation">
           <CreateCharacter />
         </Route>
         <Route path="/post-creation">
