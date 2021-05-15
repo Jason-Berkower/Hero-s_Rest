@@ -8,7 +8,7 @@ delete "/users/:id", to: 'users#destroy'
 
 # Routes for Characters
 get "/users/characters/", to: 'characters#index', as: 'characters'
-get "/users/:id/characters/:id", to: 'characters#show'
+get "/users/:user_id/characters/", to: 'characters#index'
 post "/users/:id/characters/", to: 'characters#create'
 put "/users/:id/characters/:id", to: 'characters#update'
 delete "/users/:id/characters/:id", to: 'characters#destroy'

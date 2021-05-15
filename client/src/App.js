@@ -35,10 +35,10 @@ function App() {
         <Route exact path="/character-creation">
           <CreateCharacter />
         </Route>
-        <Route path="/post-creation">
+        <Route path="/post-creation" currentUser={currentUser}>
           <CreatePost />
         </Route>
-        <Route path="/comment-creation">
+        <Route path="/comment-creation" currentUSer={currentUser}>
           <CreateComment />
         </Route>
       </Switch>

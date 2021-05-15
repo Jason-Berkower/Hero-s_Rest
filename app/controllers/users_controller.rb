@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :create, :update, :destroy]
+  before_action :set_user, only: [:show, :update, :destroy]
   def index
     @users = User.all
     render json: @users
@@ -15,13 +15,17 @@ class UsersController < ApplicationController
   end
 
   def update
-    @user = User.update(user_params)
-    render json: @dojo
+    @user.update(user_params)
+    if @user.save!
+      render json: @user
+    else
+      render json: @user.errors
+    end
   end
 
   def destroy
     @user.destroy
-    render json: message{"#{@user.username} has been deleted!"}
+    render json: {message: "#{@user.username} has been deleted!"}
   end
 
   private

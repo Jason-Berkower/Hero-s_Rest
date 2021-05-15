@@ -44,7 +44,7 @@ export const getAllCharacters = async () => {
 };
 
 export const getOneCharacter = async (id) => {
-  const res = await api.get(`/users/${id}/characters/${id}`);
+  const res = await api.get(`/users/${id}/characters/`);
   return res.data;
 };
 

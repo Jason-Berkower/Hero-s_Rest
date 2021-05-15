@@ -6,7 +6,8 @@ class CharactersController < ApplicationController
   end
 
   def show
-    render json = @character, include: :user, status: :ok
+    p params
+    render json: @character, include: :user, status: :ok
   end
 
   def create
