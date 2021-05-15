@@ -5,7 +5,7 @@ const baseUrl = "https://localhost:3000";
 let apiUrl;
 
 const apiUrls = {
-  development: "https://localhost:3000",
+  development: "http://localhost:3000",
   production: "https://heroesrest-api.herokuapp.com/",
 };
 

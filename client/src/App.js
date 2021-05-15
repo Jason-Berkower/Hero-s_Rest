@@ -32,13 +32,13 @@ function App() {
         <Route path="/signin">
           <SignIn />
         </Route>
-        <Route path="">
+        <Route path="/character-creation">
           <CreateCharacter />
         </Route>
-        <Route path="">
+        <Route path="/post-creation">
           <CreatePost />
         </Route>
-        <Route path="">
+        <Route path="/comment-creation">
           <CreateComment />
         </Route>
       </Switch>
