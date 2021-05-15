@@ -183,6 +183,8 @@ src
 ## Code Showcase
 
 ```
+RUBY sample from seed.rb
+
 @table_master = User.create!(username: 'Table_Master', email: 'thetablenator@mastery.com', password_digest: 'tabletabletabletabletable')
 @serious36 = User.create!(username: 'Serious36', email: 'seriouslyguys@36ers.co.uk', password_digest: 's56g7[p_iaGhD2?sO=')
 @bigbys_fan29 = User.create!(username: 'Bigbys_fan29', email: 'floatinghands@bigbyhome.deu', password_digest: 'BiGbYsMiGhTyHaNd2')
