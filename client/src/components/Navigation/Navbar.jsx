@@ -4,7 +4,7 @@ import './Navbar.css';
 export default function Navbar(props) {
   return (
     <div>
-      <h1>HERO'S REST</h1>
+      <h1 id='nav-title'>HERO'S REST</h1>
       <div id='links'>
         <Link to='/'>Home</Link>
         <Link to='/signup'>Sign Up</Link>
