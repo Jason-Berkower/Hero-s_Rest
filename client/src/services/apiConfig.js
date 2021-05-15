@@ -70,6 +70,18 @@ export const createPost = async (id, formData) => {
   return res.data;
 };
 
+export const updatePost = async (id, formData) => {
+  const res = await api.put(`/users/${id}/characters/${id}/posts`, {
+    post: formData,
+  });
+  return res.data;
+};
+
+export const deletePost = async (id) => {
+  const res = await api.delete(`/users/${id}/characters/${id}/posts/${id}`);
+  return res.data;
+};
+
 // FOR COMMENTS
 export const getAllComments = async () => {
   const res = await api.get(`/comments`);
