@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { createComment } from '../../../services/apiConfig';
 import './Comment.css';
 
-export default function CreateComment() {
+export default function CreateComment(props) {
   const [input, setInput] = useState({});
 
   const handleChange = (e) => {
