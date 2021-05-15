@@ -6,12 +6,11 @@ class CharactersController < ApplicationController
   end
 
   def show
-    p params
     render json: @character, include: :user, status: :ok
   end
 
   def create
-    @characters = Character.create!(character_params)
+    @character = Character.create!(character_params)
     render json: @character
   end
 
@@ -28,7 +27,7 @@ class CharactersController < ApplicationController
   private
 
   def character_params
-    params.require(:character).permit(:name, :race, :class, :img_url, :user_id)
+    params.require(:character).permit(:name, :race, :character_class, :img_url, :user_id)
   end
 
   def set_character

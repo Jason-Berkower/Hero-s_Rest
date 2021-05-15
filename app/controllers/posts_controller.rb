@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_action :set_post, only:[:show, :update, :delete]
   def index
     @character = Character.find(params[:character_id])
     @posts = Post.where(character_id: @character.id)
@@ -19,15 +20,15 @@ class PostsController < ApplicationController
     render json: @post
   end
 
-  def destroy
+  def delete
     @post.destroy
-    render json: message{"#{@post.title} has been deleted."}
+    render json: {message: "#{@post.title} has been deleted."}
   end
 
   private
 
   def post_params
-    params.require(:post).permit(:title, :content, :character_id)
+    params.require(:post).permit(:title, :content, :character_id, :user_id)
   end
 
   def set_post
