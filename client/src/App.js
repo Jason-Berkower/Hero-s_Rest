@@ -33,22 +33,20 @@ function App() {
         <Route exact path="/signin">
           <SignIn />
         </Route>
-        <Route exact path="/character-creation" currentUser={currentUser}>
-          <CreateCharacter />
+        <Route exact path="/character-creation">
+          <CreateCharacter currentUser={currentUser} />
         </Route>
-        <Route
-          path="/post-creation"
-          currentUser={currentUser}
-          currentCharacter={currentCharacter}
-        >
-          <CreatePost />
+        <Route path="/post-creation">
+          <CreatePost
+            currentUser={currentUser}
+            currentCharacter={currentCharacter}
+          />
         </Route>
-        <Route
-          path="/comment-creation"
-          currentUSer={currentUser}
-          currentCharacter={currentCharacter}
-        >
-          <CreateComment />
+        <Route path="/comment-creation">
+          <CreateComment
+            currentUSer={currentUser}
+            currentCharacter={currentCharacter}
+          />
         </Route>
       </Switch>
       <Footer />
