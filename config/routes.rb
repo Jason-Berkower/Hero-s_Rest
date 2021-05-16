@@ -5,6 +5,7 @@ get "/users/:id", to: 'users#show'
 post "/users/", to: 'users#create'
 put "/users/:id", to: 'users#update'
 delete "/users/:id", to: 'users#destroy'
+post "/signin", to: 'users#signin'
 
 # Routes for Characters
 get "/users/characters/", to: 'characters#index', as: 'characters'

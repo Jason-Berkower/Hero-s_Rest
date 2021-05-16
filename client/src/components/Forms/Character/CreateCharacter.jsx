@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import { createCharacter } from '../../../services/apiConfig';
+import { useHistory } from 'react-router-dom';
 import './CreateCharacter.css';
 
 export default function CreateCharacter(props) {
   const [input, setInput] = useState({});
+
+  let history = useHistory();
 
   const handleChange = (e) => {
     const { name, value } = e.target;

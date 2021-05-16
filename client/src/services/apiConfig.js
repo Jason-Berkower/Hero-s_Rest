@@ -32,6 +32,12 @@ export const getOneUser = async (id) => {
   return res.data;
 };
 
+export const signIn = async (formData) => {
+  const res = await api.post("/signin", formData);
+  return res.data;
+};
+// Checks username and password.
+
 export const createUser = async (formData) => {
   const res = await api.post("/users", formData);
   return res.data;

@@ -31,7 +31,7 @@ function App() {
           <SignUp setCurrentUser={setCurrentUser} />
         </Route>
         <Route exact path="/signin">
-          <SignIn />
+          <SignIn setCurrentUser={setCurrentUser} />
         </Route>
         <Route exact path="/character-creation">
           <CreateCharacter

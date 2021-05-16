@@ -28,6 +28,19 @@ class UsersController < ApplicationController
     render json: {message: "#{@user.username} has been deleted!"}
   end
 
+  def signin
+    @users = User.where(username: user_params[:username])
+    if @users.length > 0
+      if @users[0].password_digest == params[:password_digest]
+        render json: @users[0]
+      else
+        render json: {message: "What are you doing?"}
+      end
+    else
+      render json: {message: "User not found!"}
+    end
+  end
+
   private
 
   def user_params
