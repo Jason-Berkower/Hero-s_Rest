@@ -12,6 +12,7 @@ import "./App.css";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
+  const [currentCharacter, setCurrentCharacter] = useState(null);
 
   // useEffect(() => {
   //   verify();
@@ -24,7 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar currentUser={currentUser} />
+      <Navbar currentUser={currentUser} currentCharacter={currentCharacter} />
       <Switch>
         <Route exact path="/signup">
           <SignUp />
@@ -32,13 +33,21 @@ function App() {
         <Route exact path="/signin">
           <SignIn />
         </Route>
-        <Route exact path="/character-creation">
+        <Route exact path="/character-creation" currentUser={currentUser}>
           <CreateCharacter />
         </Route>
-        <Route path="/post-creation" currentUser={currentUser}>
+        <Route
+          path="/post-creation"
+          currentUser={currentUser}
+          currentCharacter={currentCharacter}
+        >
           <CreatePost />
         </Route>
-        <Route path="/comment-creation" currentUSer={currentUser}>
+        <Route
+          path="/comment-creation"
+          currentUSer={currentUser}
+          currentCharacter={currentCharacter}
+        >
           <CreateComment />
         </Route>
       </Switch>

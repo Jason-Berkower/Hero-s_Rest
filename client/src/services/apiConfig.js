@@ -43,8 +43,8 @@ export const getAllCharacters = async () => {
   return res.data;
 };
 
-export const getOneCharacter = async (id) => {
-  const res = await api.get(`/users/${id}/characters/`);
+export const getOneCharacter = async (user_id) => {
+  const res = await api.get(`/users/${user_id}/characters/`);
   return res.data;
 };
 
