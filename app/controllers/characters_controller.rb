@@ -10,7 +10,10 @@ class CharactersController < ApplicationController
   end
 
   def create
-    @character = Character.create!(character_params)
+    @user = User.find(params[:user_id])
+    @character = Character.create(character_params)
+    @character.user = @user
+    @character.save!
     render json: @character
   end
 

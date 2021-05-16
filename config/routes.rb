@@ -10,7 +10,7 @@ post "/signin", to: 'users#signin'
 # Routes for Characters
 get "/users/characters/", to: 'characters#index', as: 'characters'
 get "/users/:user_id/characters/", to: 'characters#index'
-post "/users/:id/characters/", to: 'characters#create'
+post "/users/:user_id/characters/", to: 'characters#create'
 put "/users/:id/characters/:id", to: 'characters#update'
 delete "/users/:id/characters/:id", to: 'characters#destroy'
 

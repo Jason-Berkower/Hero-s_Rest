@@ -18,7 +18,7 @@ export default function CreateCharacter(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await createCharacter(input);
+    const res = await createCharacter(props.currentUser.id, input);
     props.setCurrentCharacter(res);
     history.push('/');
   }
@@ -32,7 +32,7 @@ export default function CreateCharacter(props) {
         <label>Race:</label>
         <input name="race" type="text" value={input.race} />
         <label>Class:</label>
-        <input name="class" type="text" value={input.class} />
+        <input name="character_class" type="text" value={input.character_class} />
         <label>Image URL:</label>
         <input name="img_url" type="text" value={input.img_url} />
         <button type="submit">Submit</button>
