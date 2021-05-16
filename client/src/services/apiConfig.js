@@ -33,7 +33,7 @@ export const getOneUser = async (id) => {
 };
 
 export const createUser = async (formData) => {
-  const res = await api.post("/users", { user: formData });
+  const res = await api.post("/users", formData);
   return res.data;
 };
 
@@ -65,16 +65,12 @@ export const getOnePost = async (id) => {
 };
 
 export const createPost = async (id, formData) => {
-  const res = await api.post(`/users/${id}/characters/${id}/posts`, {
-    post: formData,
-  });
+  const res = await api.post(`/users/${id}/characters/${id}/posts`, formData);
   return res.data;
 };
 
 export const updatePost = async (id, formData) => {
-  const res = await api.put(`/users/${id}/characters/${id}/posts`, {
-    post: formData,
-  });
+  const res = await api.put(`/users/${id}/characters/${id}/posts`, formData);
   return res.data;
 };
 
@@ -95,6 +91,6 @@ export const getOneComment = async (id) => {
 };
 
 export const createComment = async (formData) => {
-  const res = await api.post("/comments", { comment: formData });
+  const res = await api.post("/comments", formData);
   return res.data;
 };

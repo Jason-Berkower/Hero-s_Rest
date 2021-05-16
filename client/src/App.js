@@ -28,13 +28,16 @@ function App() {
       <Navbar currentUser={currentUser} currentCharacter={currentCharacter} />
       <Switch>
         <Route exact path="/signup">
-          <SignUp />
+          <SignUp setCurrentUser={setCurrentUser} />
         </Route>
         <Route exact path="/signin">
           <SignIn />
         </Route>
         <Route exact path="/character-creation">
-          <CreateCharacter currentUser={currentUser} />
+          <CreateCharacter
+            currentUser={currentUser}
+            setCurrentCharacter={setCurrentCharacter}
+          />
         </Route>
         <Route path="/post-creation">
           <CreatePost
@@ -44,7 +47,7 @@ function App() {
         </Route>
         <Route path="/comment-creation">
           <CreateComment
-            currentUSer={currentUser}
+            currentUser={currentUser}
             currentCharacter={currentCharacter}
           />
         </Route>

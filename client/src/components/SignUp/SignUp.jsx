@@ -1,4 +1,4 @@
-import { createUser, getOneUser } from '../../services/apiConfig';
+import { createUser } from '../../services/apiConfig';
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import './Signing.css';
@@ -24,11 +24,9 @@ export default function SignUp(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await createUser(input);
-    let res = await getOneUser(input);
-    let currentUser = res
+    let res = await createUser(input);
+    props.setCurrentUser(res);
     history.push('/');
-    return currentUser;
   };
 
   return (

@@ -16,7 +16,8 @@ export default function CreateCharacter(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const res = await createCharacter(input);
-    return res;
+    props.setCurrentCharacter(res);
+    history.push('/');
   }
 
   return (
