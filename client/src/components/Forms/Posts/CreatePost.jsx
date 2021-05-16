@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import { createPost } from '../../../services/apiConfig';
+import { useHistory } from 'react-router-dom';
 import './CreatePost.css';
 
 export default function CreatePost(props) {
   const [input, setInput] = useState({});
+
+  let history = useHistory();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -16,7 +19,8 @@ export default function CreatePost(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const res = await createPost(input);
-    return res;
+    console.log(res);
+    history.push('/');
   };
 
   return (

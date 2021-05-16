@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 export default function Navbar(props) {
+
   return (
     <div>
       <h1 id='nav-title'>HERO'S REST</h1>
