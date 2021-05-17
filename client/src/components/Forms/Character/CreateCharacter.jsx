@@ -25,7 +25,7 @@ export default function CreateCharacter(props) {
 
   return (
     <div>
-      <h2>Create Your Character</h2>
+      <h2 id="character-container-title">Create Your Character</h2>
       <form id="character-container" onChange={handleChange} onSubmit={handleSubmit}>
         <label>Name:</label>
         <input name="name" type="text" value={input.name} />

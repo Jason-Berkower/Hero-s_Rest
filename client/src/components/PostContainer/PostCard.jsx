@@ -37,7 +37,7 @@ export default function PostCard(props) {
   };
 
   return (
-    <div>
+    <div id="post-card">
       <h3>{props.post.title}, by {props.post.character.name}</h3>
       <p>{props.post.content}</p>
       <sub onClick={handleDelete}>X</sub> <sub onClick={() => setEditOpen(p => !p)}>EDIT</sub>

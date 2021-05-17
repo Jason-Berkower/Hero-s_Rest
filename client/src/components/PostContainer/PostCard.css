@@ -1,0 +1,16 @@
+#post-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-bottom: 25px;
+  margin-left: 150px;
+  margin-right: 150px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+#post-card sub {
+  color: purple;
+  font-weight: bolder;
+  margin: 5px;
+}

@@ -24,7 +24,7 @@ export default function CreatePost(props) {
 
   return (
     <div>
-      <h2>Create a Post!</h2>
+      <h2 id="post-container-title">Create a Post!</h2>
       <form id="post-container" onChange={handleChange} onSubmit={handleSubmit}>
         <label>Title:</label>
         <input name="title" type="text" value={input.title} />

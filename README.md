@@ -165,7 +165,7 @@ src
 
 #### ERD Model
 
-![Hero's Rest ERD](https://i.imgur.com/0h1lzPC.png)
+![Hero's Rest ERD](https://i.imgur.com/vGUHfT9.jpg)
 <br>
 
 ---
