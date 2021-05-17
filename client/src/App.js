@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import CreateCharacter from "./components/Forms/Character/CreateCharacter";
 import CreatePost from "./components/Forms/Posts/CreatePost";
 import CreateComment from "./components/Forms/Comments/CreateComment";
+import PostContainer from "./components/PostContainer/PostContainer";
 
 import { Route, Switch } from "react-router-dom";
 import { useState } from "react";
@@ -29,6 +30,9 @@ function App() {
             currentUser={currentUser}
             setCurrentCharacter={setCurrentCharacter}
           />
+        </Route>
+        <Route exact path="/">
+          <PostContainer />
         </Route>
         <Route path="/post-creation">
           <CreatePost

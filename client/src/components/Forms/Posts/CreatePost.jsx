@@ -18,8 +18,7 @@ export default function CreatePost(props) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await createPost(props.currentUser.id, props.currentCharacter.id, input);
-    console.log(res);
+    await createPost(props.currentUser.id, props.currentCharacter.id, input);
     history.push('/');
   };
 

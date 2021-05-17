@@ -61,7 +61,7 @@ export const createCharacter = async (id, formData) => {
 
 // FOR POSTS
 export const getAllPosts = async () => {
-  const res = await api.get(`users/characters/posts`);
+  const res = await api.get(`/all_posts`);
   return res.data;
 };
 
@@ -78,8 +78,11 @@ export const createPost = async (user_id, character_id, formData) => {
   return res.data;
 };
 
-export const updatePost = async (id, formData) => {
-  const res = await api.put(`/users/${id}/characters/${id}/posts`, formData);
+export const updatePost = async (user_id, character_id, post_id, formData) => {
+  const res = await api.put(
+    `/users/${user_id}/characters/${character_id}/posts/${post_id}`,
+    formData
+  );
   return res.data;
 };
 

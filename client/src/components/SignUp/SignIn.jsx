@@ -24,7 +24,6 @@ export default function SignIn(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     let res = await signIn(input);
-    console.log(res);
     if (!res.message) {
       props.setCurrentUser(res);
       history.push('/')
