@@ -70,8 +70,11 @@ export const getOnePost = async (id) => {
   return res.data;
 };
 
-export const createPost = async (id, formData) => {
-  const res = await api.post(`/users/${id}/characters/${id}/posts`, formData);
+export const createPost = async (user_id, character_id, formData) => {
+  const res = await api.post(
+    `/users/${user_id}/characters/${character_id}/posts`,
+    formData
+  );
   return res.data;
 };
 

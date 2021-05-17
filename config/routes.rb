@@ -15,9 +15,9 @@ put "/users/:id/characters/:id", to: 'characters#update'
 delete "/users/:id/characters/:id", to: 'characters#destroy'
 
 # Routes for Posts
-get "/users/characters/posts/", to: 'posts#index', as: 'posts'
+get "/all_posts/", to: 'posts#all_posts', as: 'posts'
 get "/users/:id/characters/:id/posts/:id", to: 'posts#show'
-post "/users/:id/characters/:id/posts/", to: 'posts#create'
+post "/users/:user_id/characters/:character_id/posts/", to: 'posts#create'
 put "/users/:id/characters/:id/posts/:id", to: 'posts#update'
 delete "/users/:id/characters/:id/posts/:id", to: 'posts#delete'
 

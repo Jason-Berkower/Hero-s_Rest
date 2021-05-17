@@ -11,8 +11,16 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.create!(post_params)
-    render json: @post
+    @user = User.find(params[:user_id])
+    @character = Character.find(params[:character_id])
+    @post = Post.create(post_params)
+    @post.user = @user
+    @post.character = @character
+    if @post.save!
+      render json: @post
+    else
+      render json: @post.errors
+    end
   end
 
   def update
@@ -23,6 +31,11 @@ class PostsController < ApplicationController
   def delete
     @post.destroy
     render json: {message: "#{@post.title} has been deleted."}
+  end
+
+  def all_posts
+    @posts = Post.all
+    render json: @posts, include: :character, status: :ok
   end
 
   private
