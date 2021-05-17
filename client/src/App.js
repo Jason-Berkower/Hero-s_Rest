@@ -14,15 +14,6 @@ function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const [currentCharacter, setCurrentCharacter] = useState(null);
 
-  // useEffect(() => {
-  //   verify();
-  // }, []);
-
-  // const verify = async () => {
-  //   let user = await verifyUser();
-  //   setCurrentUser(user);
-  // };
-
   return (
     <div className="App">
       <Navbar currentUser={currentUser} currentCharacter={currentCharacter} />

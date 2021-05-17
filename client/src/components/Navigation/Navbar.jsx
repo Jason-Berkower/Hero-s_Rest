@@ -3,9 +3,12 @@ import './Navbar.css';
 
 export default function Navbar(props) {
 
+  const { currentUser } = props
+
   return (
     <div>
       <h1 id='nav-title'>HERO'S REST</h1>
+      {currentUser && <h4>Welcome, {currentUser.username}!</h4>}
       <div id='links'>
         <Link to='/'>Home</Link>
         <Link to='/signup'>Sign Up</Link>
