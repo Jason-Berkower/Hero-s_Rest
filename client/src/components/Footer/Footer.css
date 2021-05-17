@@ -7,3 +7,15 @@
   width: 100%;
   color: white;
 }
+
+@media only screen and (max-width: 900px) {
+  .foot-content {
+    color: red;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .foot-content {
+    color: yellow;
+  }
+}
