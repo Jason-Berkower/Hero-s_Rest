@@ -156,7 +156,7 @@ src
 | P-MVP Authentication               |    L     |     4 hrs      |       0       |      0      |
 | P-MVP Friend System                |    L     |     3 hrs      |       0       |      0      |
 | P-MVP Messaging Functionality      |    L     |     5 hrs      |       0       |      0      |
-| Polish                             |    L     |     3 hrs      |       -       |      -      |
+| Polish                             |    L     |     3 hrs      |       2       |      2      |
 | TOTAL                              |          |     48 hrs     |       -       |      -      |
 
 <br>

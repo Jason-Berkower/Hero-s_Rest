@@ -1,5 +1,6 @@
 import { updatePost, deletePost } from '../../services/apiConfig';
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
+import './PostCard.css';
 
 export default function PostCard(props) {
   const [editOpen, setEditOpen] = useState(false);

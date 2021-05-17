@@ -1,6 +1,7 @@
 import { getAllPosts } from '../../services/apiConfig';
 import PostCard from './PostCard';
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
+import './PostContainer.css';
 
 export default function PostContainer(props) {
   const [posts, setPosts] = useState([]);
