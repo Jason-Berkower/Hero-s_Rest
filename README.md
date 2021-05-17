@@ -141,23 +141,23 @@ src
 
 | Task                               | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Setup Back End Skeleton            |    H     |     1 hrs      |       1       |      1      |
+| Setup Back End Skeleton            |    H     |     1 hrs      |       3       |      3      |
 | Create Back End Models/Seeds       |    H     |     1 hrs      |       5       |      5      |
-| Create Back End Controllers/Routes |    H     |     3 hrs      |       5       |      5      |
+| Create Back End Controllers/Routes |    H     |     3 hrs      |       6       |      6      |
 | Setup Front End Skeleton           |    H     |     1 hrs      |       2       |      2      |
 | Create Navbar/Footer               |    M     |     1 hrs      |       1       |      1      |
-| Setup Back End -> Front End Comms  |    H     |     3 hrs      |      10       |     10      |
+| Setup Back End -> Front End Comms  |    H     |     3 hrs      |      12       |     12      |
 | Add SignUp/In Form                 |    M     |     2 hrs      |       3       |      3      |
 | Add Character Form                 |    M     |     3 hrs      |       3       |      3      |
 | Add Post Form                      |    M     |     3 hrs      |       3       |      3      |
 | Add Comment Form                   |    M     |     2 hrs      |       0       |      0      |
-| Styling                            |    M     |     4 hrs      |       -       |      -      |
+| Styling                            |    M     |     4 hrs      |       6       |      6      |
 | P-MVP Like System                  |    L     |     3 hrs      |       0       |      0      |
 | P-MVP Authentication               |    L     |     4 hrs      |       0       |      0      |
 | P-MVP Friend System                |    L     |     3 hrs      |       0       |      0      |
 | P-MVP Messaging Functionality      |    L     |     5 hrs      |       0       |      0      |
 | Polish                             |    L     |     3 hrs      |       2       |      2      |
-| TOTAL                              |          |     48 hrs     |       -       |      -      |
+| TOTAL                              |          |     48 hrs     |      46       |     46      |
 
 <br>
 
@@ -193,4 +193,6 @@ puts "#{User.count} users created!"
 
 ## Code Issues & Resolutions
 
-> This will be filled out when appropriate.
+- Database Reseeding Aborted: InvalidForeignKey and Unexpected Symbol Literal. This series of errors was related to an insufficient relational between two of my tables, where a foreign key wasn't present and the methods through which I went about fixing it broke syntax. The fix was creating relevant migrations to provide the tables with their respective references and modify syntax to reflect it.
+
+- Object20%Object. This popped up throughout front-end development. Each time it did, it was when the forms were handling input data. Instead of passing through the data I wanted, it was passing it through as an object, and React reflected this in the console. The fix for this required a bit of retooling the apiConfig file as well as making small adjustments to the form-related functions such as handleChange and handleSubmit.
