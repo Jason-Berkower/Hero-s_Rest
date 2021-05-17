@@ -23,7 +23,7 @@ export default function CreateComment(props) {
     <div>
       <h3 id="comment-container-title">Comment:</h3>
       <form id="comment-container" onChange={handleChange} onSubmit={handleSubmit}>
-        <input name="content" type="textarea" value={input.content} placeholder="Comment here." />
+        <input name="content" type="textarea" value={input.content} placeholder="Coming Soon! Stay Tuned!" />
         <button type="submit">Submit</button>
       </form>
     </div>
