@@ -3,7 +3,7 @@ import './Navbar.css';
 
 export default function Navbar(props) {
 
-  const { currentUser } = props
+  const { currentUser, currentCharacter } = props
 
   return (
     <div>
@@ -13,9 +13,9 @@ export default function Navbar(props) {
         <Link to='/'>Home</Link>
         <Link to='/signup'>Sign Up</Link>
         <Link to='/signin'>Sign In</Link>
-        <Link to='/character-creation'>Create A Character</Link>
-        <Link to='/post-creation'>Make a Post</Link>
-        <Link to='/comment-creation'>Make a Comment</Link>
+        {currentUser && <Link to='/character-creation'>Create A Character</Link>}
+        {currentCharacter && <Link to='/post-creation'>Make a Post</Link>}
+        {currentCharacter && <Link to='/comment-creation'>Make a Comment</Link>}
       </div>
     </div>
   )
