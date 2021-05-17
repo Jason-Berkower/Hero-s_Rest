@@ -141,21 +141,21 @@ src
 
 | Task                               | Priority | Estimated Time | Time Invested | Actual Time |
 | ---------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Setup Back End Skeleton            |    H     |     1 hrs      |       -       |      -      |
-| Create Back End Models/Seeds       |    H     |     1 hrs      |       -       |      -      |
-| Create Back End Controllers/Routes |    H     |     3 hrs      |       -       |      -      |
-| Setup Front End Skeleton           |    H     |     1 hrs      |       -       |      -      |
-| Create Navbar/Footer               |    M     |     1 hrs      |       -       |      -      |
-| Setup Back End -> Front End Comms  |    H     |     3 hrs      |       -       |      -      |
-| Add SignUp/In Form                 |    M     |     2 hrs      |       -       |      -      |
-| Add Character Form                 |    M     |     3 hrs      |       -       |      -      |
-| Add Post Form                      |    M     |     3 hrs      |       -       |      -      |
-| Add Comment Form                   |    M     |     2 hrs      |       -       |      -      |
+| Setup Back End Skeleton            |    H     |     1 hrs      |       1       |      1      |
+| Create Back End Models/Seeds       |    H     |     1 hrs      |       5       |      5      |
+| Create Back End Controllers/Routes |    H     |     3 hrs      |       5       |      5      |
+| Setup Front End Skeleton           |    H     |     1 hrs      |       2       |      2      |
+| Create Navbar/Footer               |    M     |     1 hrs      |       1       |      1      |
+| Setup Back End -> Front End Comms  |    H     |     3 hrs      |      10       |     10      |
+| Add SignUp/In Form                 |    M     |     2 hrs      |       3       |      3      |
+| Add Character Form                 |    M     |     3 hrs      |       3       |      3      |
+| Add Post Form                      |    M     |     3 hrs      |       3       |      3      |
+| Add Comment Form                   |    M     |     2 hrs      |       0       |      0      |
 | Styling                            |    M     |     4 hrs      |       -       |      -      |
-| P-MVP Like System                  |    L     |     3 hrs      |       -       |      -      |
-| P-MVP Authentication               |    L     |     4 hrs      |       -       |      -      |
-| P-MVP Friend System                |    L     |     3 hrs      |       -       |      -      |
-| P-MVP Messaging Functionality      |    L     |     5 hrs      |       -       |      -      |
+| P-MVP Like System                  |    L     |     3 hrs      |       0       |      0      |
+| P-MVP Authentication               |    L     |     4 hrs      |       0       |      0      |
+| P-MVP Friend System                |    L     |     3 hrs      |       0       |      0      |
+| P-MVP Messaging Functionality      |    L     |     5 hrs      |       0       |      0      |
 | Polish                             |    L     |     3 hrs      |       -       |      -      |
 | TOTAL                              |          |     48 hrs     |       -       |      -      |
 
