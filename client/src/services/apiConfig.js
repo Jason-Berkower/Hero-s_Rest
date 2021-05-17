@@ -1,8 +1,5 @@
 import axios from "axios";
 
-// const production = "https://heroesrest-api.herokuapp.com/";
-//eslint-disable-next-line
-const baseUrl = "https://localhost:3000";
 let apiUrl;
 
 const apiUrls = {
